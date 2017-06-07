@@ -141,17 +141,17 @@ class Board(object):
 
 
 # Printing the board
-def print_board(rows):
+def print_board(board):
     num = 0
     letters = list(string.ascii_uppercase)
     print num,
     num += 1
-    for i in rows:
+    for i in board:
         print num,
         num += 1
     print ' '
     num = 0
-    for row in rows:
+    for row in board:
         print letters[num],
         print ' '.join(row)
         num += 1
